@@ -77,11 +77,13 @@ let whoSaysHi = sayHi.bind(who)
 */
 
 function whatIsThis() {
+  console.log(this)
   return this
 }
 
 // uncomment the line below and tell us what the context of "this" is for whatIsThis()
 let context1 = whatIsThis()
+
 
 let product = {
   name: 'snake plant',
@@ -114,6 +116,7 @@ class Family {
   }
 
   whatIsThis() {
+    console.log(this)
     return this
   }
 }
